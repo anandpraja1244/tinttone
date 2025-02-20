@@ -1,10 +1,10 @@
 import AboutSection from "./Component/AboutSection"
 import BackgroundSection from "./Component/BackgroundSection"
-import NavbarUsed from "./Component/Navbarused"
-
+// import NavbarUsed from "./Component/Navbarused"
+import { NavbarUsed} from './Component/NavbarUsed'
 import Testimonials from "./Component/Testimonials "
 
-
+    
 function App() {
   return (
     <div>

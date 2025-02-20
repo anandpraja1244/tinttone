@@ -60,6 +60,7 @@ const BackgroundSection = () => {
           }}
         ></div>
       </div>
+      
 
       {/* Statistics Section */}
       <div className="absolute bottom-48 w-full text-white py-6 flex flex-wrap justify-around">

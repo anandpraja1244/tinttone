@@ -52,7 +52,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => (
   </div>
 );
 
-const NavbarUsed = () => {
+export const NavbarUsed = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -78,4 +78,3 @@ const NavbarUsed = () => {
   );
 };
 
-export default NavbarUsed;

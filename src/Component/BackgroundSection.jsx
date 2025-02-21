@@ -38,7 +38,7 @@ const BackgroundSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full mb-5 h-screen flex flex-col md:flex-row items-start overflow-hidden">
+    <section className="relative w-full mb-5 h-screen flex flex-col md:flex-row items-start overflow-hidden -z-10" id="process ">
       {/* Left Side - Text Content */}
       <div className="w-full md:w-2/5 bg-gray-800 text-white text-center px-16  flex flex-col justify-start   py-9 h-[94%] mt-0 ">
         <h2 className="text-2xl md:text-3xl font-bold uppercase">
@@ -63,14 +63,14 @@ const BackgroundSection = () => {
       
 
       {/* Statistics Section */}
-      <div className="absolute bottom-48 w-full text-white py-6 flex flex-wrap justify-around">
-        {stats.map((stat, index) => (
-          <div key={stat.id} className="w-1/2 sm:w-1/4  text-center my-4 gap-9">
-            <h3 className="text-5xl font-bold">{counts[index]}</h3>
-            <p className="text-gray-300 uppercase text-sm py-3">{stat.label}</p>
-          </div>
-        ))}
-      </div>
+      <div className="absolute bottom-3 md:bottom-48 lg:bottom-48 w-full text-white py-6 flex flex-wrap justify-around">
+      {stats.map((stat, index) => (
+        <div key={stat.id} className="w-1/2 sm:w-1/4 text-center my-4 px-4">
+          <h3 className="text-4xl md:text-5xl font-bold">{counts[index]}</h3>
+          <p className="text-gray-300 uppercase text-xs md:text-sm py-2 md:py-3">{stat.label}</p>
+        </div>
+      ))}
+    </div>
     </section>
   );
 };

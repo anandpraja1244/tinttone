@@ -7,7 +7,7 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <section className="bg-gray-900 z-auto text-white py-10">
+    <section className="bg-gray-900  text-white py-10 -z-10">
       <div className="grid md:grid-cols-2 gap-8 px-6 md:px-16">
         {/* Left Section */}
         <div className="flex flex-col justify-center">

@@ -1,3 +1,5 @@
+import SimpleSliders from "./SimpleSliders";
+
 const testimonials = [
     {
       id: 1,
@@ -9,11 +11,12 @@ const testimonials = [
   
   const Testimonials = () => {
     return (
+      <>
       <div className="bg-gray-900 text-white py-16 px-4 sm:px-6 md:px-10 lg:px-20 flex flex-col items-center">
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="flex flex-col md:flex-row md:items-center rounded-lg p-6 shadow-lg max-w-5xl w-full"
+            className="flex flex-col md:flex-row md:items-center rounded-lg p-6 shadow-lg max-w-6xl w-full"
           >
             {/* Video Section */}
             <div className="w-full md:w-1/2 overflow-hidden rounded-lg">
@@ -37,14 +40,16 @@ const testimonials = [
                 href="https://www.youtube.com/channel/UCrwvrlDS33tHbi_In2b_u7Q"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 bg-red-700 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300"
+                className="mt-6 bg-blue-400 text-white px-4 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300"
               >
                 OUR YOUTUBE CHANNEL
               </a>
             </div>
           </div>
         ))}
+        
       </div>
+      <SimpleSliders/>  </>
     );
   };
   

@@ -1,33 +1,35 @@
 import { FaThumbsUp, FaClock } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa6";
 import { FaHandshakeSimple } from "react-icons/fa6";
+import { BottomNavbar } from "./HomePage";
+
 
 const features = [
   {
-    title: "One Stop",
+    title: "  Promised Timelines  ",
     description:
-      "Our Best Interior Designing team will stay from Quantity Surveys until Visualization. The customers get all solutions at one place.",
+      "Time Management has been one of our core strengths. We have a dedicated team of individuals who are focused on ensuring the timely delivery of projects.",
     icon: <FaFlag className="text-green-400 text-2xl" />,
     hasBorder: true,
   },
   {
-    title: "Quality Adherence",
+    title: "Unlimited Designs ",
     description:
-      "Our Designers ensure the quality and execution standards across the on-site activities. Customers get all updates via monthly meetings.",
+      "Buying a house and converting it into a home is a dream for many. There is no limit to the variety of designs that you can explore with us.",
     icon: <FaThumbsUp className="text-green-400 text-2xl" />,
     hasBorder: true,
   },
   {
-    title: "Client Relations",
+    title: " Dedicated Designers ",
     description:
-      "Being well known for valuing the relationship with clients, we have absolutely no hidden costs or conditions-applied-design process.",
+      "Each person in our team absolutely loves what they do. Naturally, the results are outstanding!",
     icon: <FaHandshakeSimple className="text-green-400 text-2xl" />,
     hasBorder: true,
   },
   {
-    title: "50-day Projects",
+    title: " Best Price ",
     description:
-      "Our promise of 'Interiors in 50 days' is perfect for every client who is in a hurry. Delivering great designs in client-desired timelines.",
+      "Our customers do not believe what they see in our quotations. We are too good to be true!",
     icon: <FaClock className="text-green-400 text-2xl" />,
     hasBorder: true,
   },
@@ -35,9 +37,11 @@ const features = [
 
 const AboutSection = () => {
   return (
-    <div className="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-10 gap-10 items-center">
+    <>
+    <BottomNavbar    />
+    <div className="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-10 gap-10 items-center" id="about">
       {/* Left Side - */}
-      <div className="md:col-span-3 sm:ml-10 flex justify-center">
+      <div className="md:col-span-4 sm:ml-10 flex justify-center  ">
         <img
           src="https://tinttoneandshade.com/wp-content/uploads/44-683x1024.webp"
           alt="Interior Design"
@@ -57,13 +61,9 @@ const AboutSection = () => {
         <span className="block w-32 border-b-4 border-red-400 "></span>
         </div>
         <p className="mt-4 text-gray-600">
-          Since 2016. Team of Best Interior Designing enthusiastic peeps in Chennai who work
-          together for only one goal: To transform living spaces to make living a complete joy.
+        Our design process is very simple. We listen to you, understand what you need, and come up with the best designs. Before you realize it, you will be walking into your dream home with smiling faces.
         </p>
-        <p className="mt-2 text-gray-600">
-          And we do that by offering artful yet appropriate and comfortable interior design
-          solutions for your home and workspaces.
-        </p>
+       
 
         {/* Features List */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -85,6 +85,7 @@ const AboutSection = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

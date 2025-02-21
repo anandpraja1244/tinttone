@@ -1,18 +1,23 @@
 import AboutSection from "./Component/AboutSection"
 import BackgroundSection from "./Component/BackgroundSection"
-// import NavbarUsed from "./Component/Navbarused"
-import { NavbarUsed} from './Component/NavbarUsed'
+import Footer from "./Component/Footer"
+import HomePage from "./Component/HomePage"
+import StepsSection from "./Component/StepsSection"
+ 
+
 import Testimonials from "./Component/Testimonials "
 
     
 function App() {
   return (
     <div>
-     <NavbarUsed/>  
+    
+     <HomePage/>
      <AboutSection/>
      <Testimonials/>
-    
+     <StepsSection/>
      <BackgroundSection/>
+     <Footer/>
     </div>
   )
 }
